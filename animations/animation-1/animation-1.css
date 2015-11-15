@@ -1,1 +1,18 @@
+/*********   ANIMATION 1   **************/
 
+#animation_1 {
+  -webkit-animation-name: animation_1;
+  animation-name: animation_1;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes animation_1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
