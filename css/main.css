@@ -30,6 +30,9 @@ a {
 a:hover, a:focus, a:active {
   color: #19b5fe;
 }
+.blue {
+  color: #19b5fe;
+}
 
 /*
 ==========================================
@@ -55,14 +58,17 @@ a:hover, a:focus, a:active {
   text-align: right;
   padding: 10px 25px 10px 0;
 }
-.main-nav ul li:hover {
+.main-nav ul li:hover{
   color: #19b5fe;
   cursor: pointer;
 }
-.activeMenuItem {
+.activeMenuItem{
   background-color: #fff;
   color: #19b5fe;
   position: relative;
+}
+.activeMenuItem a{
+  color: #19b5fe;
 }
 .activeMenuItem::after {
   content: '';
@@ -113,10 +119,15 @@ a:hover, a:focus, a:active {
   width: 200px;
   text-align: center;
   background-color: #19b5fe;
+  border: 1px solid #19b5fe;
   color: #fff;
   padding: 20px;
   margin: 0 auto 75px;
   font-weight: 300;
+}
+.cta:hover {
+  background-color: #fff;
+  color: #19b5fe;
 }
 .gallery {
   box-sizing: border-box;
@@ -125,7 +136,7 @@ a:hover, a:focus, a:active {
   overflow: auto;
   padding: 50px 20px 25px;
 }
-.gallery h3 {
+h3 {
   text-align: center;
   font-weight: 100;
   text-transform: uppercase;
@@ -190,4 +201,60 @@ a:hover, a:focus, a:active {
 }
 .item-content:hover .item-caption {
   transform: translateY(0);
+}
+
+.how-to-use {
+  background-color: #fff;
+  padding-top: 75px;
+  width: 60%;
+  margin: 0 auto;
+}
+.how-to-use p {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+.row .use-col {
+  margin-top: 25px;
+  height: 200px;
+  width: 30%;
+}
+.use-col .icon {
+  display: block;
+  height: 35px;
+  margin: 0 auto;
+}
+.use-col .use-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 25px auto;
+}
+.use-col .use-description {
+  font-size: 14px;
+}
+
+
+footer {
+  padding-left: 200px;
+  text-align: center;
+  background-color: #7f7f7f;
+  color: #e5e5e5;
+  height: 40px;
+  line-height: 40px;
+}
+footer p {
+  font-size: 12px;
+  opacity: .5;
+  text-transform: uppercase;
+}
+footer p img {
+  height: 12px;
+}
+footer p a {
+  color: #e5e5e5;
+}
+footer p a:hover {
+  color: #fff;
 }
