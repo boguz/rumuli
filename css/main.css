@@ -105,61 +105,12 @@ a:hover, a:focus, a:active {
 
 /*
 ==========================================
-  MAIN CONTENT
-==========================================
-*/
-
-.main-content {
-  width: 100%;
-  max-width: 1280;
-  padding-left: 200px;
-  box-sizing: border-box;
-  padding-top: 75px;
-}
-.intro-sentence {
-  font-size: 18px;
-  font-weight: 300;
-  width: 60%;
-  margin: 0 auto 50px;
-  text-align: center;
-  line-height: 1.6;
-}
-.cta {
-  display: block;
-  width: 200px;
-  text-align: center;
-  background-color: #19b5fe;
-  border: 1px solid #19b5fe;
-  color: #fff;
-  padding: 20px;
-  margin: 0 auto 75px;
-  font-weight: 300;
-}
-.cta:hover {
-  background-color: #fff;
-  color: #19b5fe;
-}
-@media only screen and (max-width: 760px) {
-  .main-content {
-    padding-left: 0;
-  }
-}
-
-/*
-==========================================
   MOBILE
 ==========================================
 */
 
 section.mobile {
   display: none;
-}
-.mobile .mobile-logo {
-  position: fixed;
-  height: 60px;
-  top: 20px;
-  left: 20px;
-  z-index: 0;
 }
 .menu-button {
   height: 20px;
@@ -269,6 +220,56 @@ section.mobile {
 
 /*
 ==========================================
+  MAIN CONTENT
+==========================================
+*/
+
+.main-content {
+  width: 100%;
+  max-width: 1280;
+  padding-left: 200px;
+  box-sizing: border-box;
+  padding-top: 75px;
+}
+.mobile-logo {
+  display: none;
+}
+.intro-sentence {
+  font-size: 18px;
+  font-weight: 300;
+  width: 60%;
+  margin: 0 auto 50px;
+  text-align: center;
+  line-height: 1.6;
+}
+.cta {
+  display: block;
+  width: 200px;
+  text-align: center;
+  background-color: #19b5fe;
+  border: 1px solid #19b5fe;
+  color: #fff;
+  padding: 20px;
+  margin: 0 auto 75px;
+  font-weight: 300;
+}
+.cta:hover {
+  background-color: #fff;
+  color: #19b5fe;
+}
+@media only screen and (max-width: 760px) {
+  .main-content {
+    padding-left: 0;
+  }
+  .mobile-logo {
+    display: block;
+    margin: 0 auto 50px;
+  }
+}
+
+
+/*
+==========================================
   GALLERY
 ==========================================
 */
@@ -301,6 +302,7 @@ h3 {
 .gallery-item {
   background-color: #fff;
   width: 30%;
+  min-height: 100px;
   padding-bottom: 27.21%;
   position: relative;
 }
@@ -333,9 +335,9 @@ h3 {
   height: 30px;
   width: 100%;
   bottom: 0;
-  -webkit-transform: translateY(30px);
-  -ms-transform: translateY(30px);
-  transform: translateY(30px);
+  -webkit-transform: translateY(32px);
+  -ms-transform: translateY(32px);
+  transform: translateY(32px);
   left: 0;
   text-align: center;
   line-height: 30px;
@@ -365,7 +367,7 @@ h3 {
     margin: 20px 0;
   }
   .gallery-item:last-of-type {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -415,7 +417,7 @@ h3 {
     display: block;
   }
   .row .use-col {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
   }
 }
