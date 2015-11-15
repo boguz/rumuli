@@ -302,7 +302,6 @@ h3 {
 .gallery-item {
   background-color: #fff;
   width: 30%;
-  min-height: 100px;
   padding-bottom: 27.21%;
   position: relative;
 }
@@ -364,6 +363,7 @@ h3 {
   }
   .gallery-item {
     width: 100%;
+    min-height: 100px;
     margin: 20px 0;
   }
   .gallery-item:last-of-type {
