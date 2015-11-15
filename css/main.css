@@ -65,11 +65,11 @@ a:hover, a:focus, a:active {
   display: block;
   width: 100%;
 }
-.main-nav ul li a:hover{
+.main-nav ul li a:hover {
   color: #19b5fe;
   cursor: pointer;
 }
-.activeMenuItem{
+.activeMenuItem {
   background-color: #fff;
   color: #19b5fe;
   position: relative;
@@ -96,6 +96,11 @@ a:hover, a:focus, a:active {
   padding-right: 25px;
   padding-bottom: 10px;
   font-weight: 300;
+}
+@media only screen and (max-width: 760px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 /*
@@ -134,12 +139,140 @@ a:hover, a:focus, a:active {
   background-color: #fff;
   color: #19b5fe;
 }
+@media only screen and (max-width: 760px) {
+  .main-content {
+    padding-left: 0;
+  }
+}
+
+/*
+==========================================
+  MOBILE
+==========================================
+*/
+
+section.mobile {
+  display: none;
+}
+.mobile .mobile-logo {
+  position: fixed;
+  height: 60px;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+.menu-button {
+  height: 20px;
+  width: 24px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  -webkit-transition: all .75s ease-out;
+  transition: all .75s ease-out;
+  z-index: 5;
+}
+.menu-button span {
+  width: 24px;
+  height: 3px;
+  background-color: #7f7f7f;
+  position: absolute;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+.menu-button span.top-stripe {
+  top: 0;
+}
+.menu-button span.mid-stripe {
+  top: 9px;
+  opacity: 1;
+}
+.menu-button span.bot-stripe {
+  bottom: 0px;
+}
+.menu-button:hover span {
+  background-color: #19b5fe;
+}
+
+/* to animate menu button */
+
+.menu-button.clicked span.top-stripe {
+  top: 9px;
+  background-color: #7f7f7f;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.menu-button.clicked span.mid-stripe {
+  opacity: 0;
+}
+.menu-button.clicked span.bot-stripe {
+  bottom: 8px;
+  background-color: #7f7f7f;
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(-225deg);
+  transform: rotate(-225deg);
+}
+.menu-button.clicked:hover span {
+  background-color: #19b5fe;
+}
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f2f2f2;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out
+}
+.mobile-nav.open-mobile-menu {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+.mobile-nav ul {
+  list-style: none;
+}
+.mobile-nav ul li {
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+}
+.mobile-nav ul li a {
+  background-color: #f2f2f2;
+}
+.mobile-nav ul li a:after {
+  display: none;
+}
+@media only screen and (max-width: 760px) {
+  section.mobile {
+    display: block;
+  }
+}
 
 /*
 ==========================================
   GALLERY
 ==========================================
 */
+
 .gallery {
   box-sizing: border-box;
   background: #e5e5e5;
@@ -162,8 +295,8 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 .gallery-item {
   background-color: #fff;
@@ -180,14 +313,14 @@ h3 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-         -webkit-box-pack: center;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
-            -ms-flex-pack: center;
-          justify-content: center;
-    -webkit-box-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
   -webkit-align-items: center;
-       -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   overflow: hidden;
   border: 1px solid #fff;
   -webkit-transition: border-color .3s ease-in-out;
@@ -201,8 +334,8 @@ h3 {
   width: 100%;
   bottom: 0;
   -webkit-transform: translateY(30px);
-      -ms-transform: translateY(30px);
-          transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  transform: translateY(30px);
   left: 0;
   text-align: center;
   line-height: 30px;
@@ -214,10 +347,26 @@ h3 {
 .item-content:hover {
   border: 1px solid #19b5fe;
 }
+.item-content:hover .item {
+  color: #7f7f7f;
+}
 .item-content:hover .item-caption {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+@media only screen and (max-width: 520px) {
+  .row {
+    display: block;
+    margin: 0;
+  }
+  .gallery-item {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .gallery-item:last-of-type {
+    margin-bottom: 50px;
+  }
 }
 
 /*
@@ -225,6 +374,7 @@ h3 {
   HOW TO
 ==========================================
 */
+
 .how-to-use {
   background-color: #fff;
   padding-top: 75px;
@@ -240,7 +390,6 @@ h3 {
 }
 .row .use-col {
   margin-top: 25px;
-  height: 200px;
   width: 30%;
 }
 .use-col .icon {
@@ -256,12 +405,27 @@ h3 {
 .use-col .use-description {
   font-size: 14px;
 }
+@media only screen and (max-width: 660px) {
+  .how-to-use {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .how-to-use .row {
+    display: block;
+  }
+  .row .use-col {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
 
 /*
 ==========================================
   FOOTER
 ==========================================
 */
+
 footer {
   padding-left: 200px;
   text-align: center;
@@ -283,4 +447,9 @@ footer p a {
 }
 footer p a:hover {
   color: #fff;
+}
+@media only screen and (max-width: 760px) {
+  footer {
+    padding-left: 0;
+  }
 }
