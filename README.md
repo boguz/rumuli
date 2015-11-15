@@ -2,7 +2,7 @@
 Collection of "Scroll Down Icons" animations
 
 ## What is Rumuli?
-Rumuli is a collection of scroll down icons animations which you can use on your full landing page websites, on your apps or where ever you need to signal your visitors / users that they should scroll down?
+Rumuli is a collection of scroll down icons animations which you can use on your full landing page websites, on your apps or where ever you need to signal your visitors / users that they should scroll down.
 
 ## Motivation
 I have heard from several people, specially older people, that sometimes it's not clear that they should scroll down to access more content. This happens for example on website with full width and height landing pages.
