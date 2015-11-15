@@ -315,7 +315,7 @@
   height: 50px;
   width: 28px;
 }
-#animation_9 svg #mouse-circle circle {
+#animation_9 svg #mouse-circle2 circle {
   -webkit-animation: animation_9, animation_9;
   animation: animation_9, animation_9;
   -webkit-animation-duration: 1.5s;
