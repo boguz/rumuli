@@ -109,12 +109,13 @@ a:hover, a:focus, a:active {
   max-width: 1280;
   padding-left: 200px;
   box-sizing: border-box;
+  padding-top: 75px;
 }
 .intro-sentence {
   font-size: 18px;
   font-weight: 300;
   width: 60%;
-  margin: 75px auto 50px;
+  margin: 0 auto 50px;
   text-align: center;
   line-height: 1.6;
 }
@@ -133,6 +134,12 @@ a:hover, a:focus, a:active {
   background-color: #fff;
   color: #19b5fe;
 }
+
+/*
+==========================================
+  GALLERY
+==========================================
+*/
 .gallery {
   box-sizing: border-box;
   background: #e5e5e5;
@@ -183,6 +190,7 @@ h3 {
           align-items: center;
   overflow: hidden;
   border: 1px solid #fff;
+  -webkit-transition: border-color .3s ease-in-out;
   transition: border-color .3s ease-in-out;
 }
 .item-caption {
@@ -192,21 +200,31 @@ h3 {
   height: 30px;
   width: 100%;
   bottom: 0;
-  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+          transform: translateY(30px);
   left: 0;
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
   font-size: 12px;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 .item-content:hover {
   border: 1px solid #19b5fe;
 }
 .item-content:hover .item-caption {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
+/*
+==========================================
+  HOW TO
+==========================================
+*/
 .how-to-use {
   background-color: #fff;
   padding-top: 75px;
@@ -239,7 +257,11 @@ h3 {
   font-size: 14px;
 }
 
-
+/*
+==========================================
+  FOOTER
+==========================================
+*/
 footer {
   padding-left: 200px;
   text-align: center;
