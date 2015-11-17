@@ -297,9 +297,20 @@ section.mobile {
 }
 h3 {
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
+  font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 50px;
+}
+.gallery h4 {
+  text-align: center;
+  font-weight: 100;
+  font: 16px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.gallery h4:not(.first-sub-title) {
+  margin-top: 75px;
 }
 .row {
   width: 100%;

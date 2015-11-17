@@ -9,8 +9,10 @@
   - blue:        #19b5fe
 
 ## FONTS
-  - menu:         Roboto 100 16pt Uppercase
-  - intro:        Roboto 100 18pt
-  - cta:          Roboto 300 16px
-  - description:  Roboto 100 12px Uppercase
-  - bottom links: Roboto 100 12pt Uppercase
+  - menu:              Roboto 100 16pt Uppercase
+  - intro:             Roboto 100 18pt
+  - cta:               Roboto 300 16px
+  - section title:     Roboto 300 20px
+  - section sub-title: Roboto 100 16px
+  - description:       Roboto 100 12px Uppercase
+  - bottom links:      Roboto 100 12pt Uppercase
