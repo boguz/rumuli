@@ -85,7 +85,7 @@ a:hover, a:focus, a:active {
 }
 .small-links {
   position: fixed;
-  bottom: 50px;
+  bottom: 25px;
   left: 67px;
 }
 .small-links a {
@@ -96,6 +96,20 @@ a:hover, a:focus, a:active {
   padding-right: 25px;
   padding-bottom: 10px;
   font-weight: 300;
+}
+a.social-icon {
+  display: inline-block;
+  padding-right: 6px;
+  padding-top: 14px;
+}
+a.social-icon svg{
+  height: 30px;
+}
+.social-icon svg path{
+  fill: #7f7f7f;
+}
+.social-icon:hover svg path {
+  fill: #19b5fe;
 }
 @media only screen and (max-width: 760px) {
   .sidebar {
