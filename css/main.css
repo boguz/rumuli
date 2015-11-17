@@ -153,10 +153,16 @@ section.mobile {
   opacity: 1;
 }
 .menu-button span.bot-stripe {
-  bottom: 0px;
+  bottom: 0;
 }
 .menu-button:hover span {
   background-color: #19b5fe;
+}
+.mobile-social {
+  margin-top: 100px;
+}
+.mobile-small-links {
+  font-size: 12px;
 }
 
 /* to animate menu button */
