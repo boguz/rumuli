@@ -1,21 +1,562 @@
 /*
 ==========================================
-  ANIMATIONS
+  SINLGE ELEMENT ANIMATIONS
 ==========================================
 */
 
 
-/*********   ANIMATION 1   **************/
-
-#animation_1 {
-  -webkit-animation-name: animation_1;
-  animation-name: animation_1;
+/******* SINGLE ELEMENT ANIMATION 1 *******/
+#single1 {
+  -webkit-animation-name: single1;
+  animation-name: single1;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-@-webkit-keyframes animation_1 {
+#single1 .scroll-arrow-container {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+#single1 span {
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background-color: #7f7f7f;
+}
+#single1 span.arrow-left {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  left: -17px;
+}
+#single1 span.arrow-right {
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  right: -17px;
+}
+@-webkit-keyframes single1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+/******* SINGLE ELEMENT ANIMATION 2 *******/
+#single2 {
+  -webkit-animation-name: single2;
+  animation-name: single2;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+#single2 .scroll-arrow-container {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+#single2 span {
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background-color: #7f7f7f;
+}
+#single2 span.arrow-left {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  left: -17px;
+}
+#single2 span.arrow-right {
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  right: -17px;
+}
+@-webkit-keyframes single2 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+
+
+/******* SINGLE ELEMENT ANIMATION 3 *******/
+#single3 {
+  -webkit-animation-name: single3;
+  animation-name: single3;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+#single3 .scroll-arrow-container {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+#single3 span {
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background-color: #7f7f7f;
+}
+#single3 span.arrow-left {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  left: -17px;
+}
+#single3 span.arrow-right {
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  right: -17px;
+}
+@-webkit-keyframes single3 {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0) translateY(200px);
+    transform: scale(0) translateY(200px);
+    opacity: 0;
+  }
+}
+
+/******* SINGLE ELEMENT ANIMATION 4 *******/
+#single4 {
+  margin-top: 40px;
+  -webkit-animation-name: single4;
+  animation-name: single4;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+#single4 span {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 15px 0 15px;
+  border-color: #7f7f7f transparent transparent transparent;
+}
+@-webkit-keyframes single4 {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes single4 {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
+
+/*
+==========================================
+  MULTIPLE ELEMENT ANIMATIONS
+==========================================
+*/
+
+
+/******* MULTIPLE ELEMENT ANIMATION 1 *******/
+#multiple1 .scroll-arrow-container {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+#multiple1 span {
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background-color: #7f7f7f;
+}
+#multiple1 span.arrow-left {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  left: -17px;
+}
+#multiple1 span.arrow-right {
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  right: -17px;
+}
+#multiple1 .arrow1 {
+  animation-name: multiple1_1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes multiple1_1 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#multiple1 .arrow2 {
+  animation-name: multiple1_2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes multiple1_2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#multiple1 .arrow3 {
+  animation-name: multiple1_3;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes multiple1_3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/******* MULTIPLE ELEMENT ANIMATION 2 *******/
+#multiple2 .scroll-arrow-container {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+#multiple2 span {
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  background-color: #7f7f7f;
+}
+#multiple2 span.arrow-left {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  left: -17px;
+}
+#multiple2 span.arrow-right {
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  right: -17px;
+}
+#multiple2 .arrow1 {
+  animation-name: multiple2_1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes multiple2_1 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#multiple2 .arrow2 {
+  animation-name: multiple2_2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes multiple2_2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#multiple2 .arrow3 {
+  animation-name: multiple2_3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes multiple2_3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+/*
+==========================================
+  SVG ANIMATIONS
+==========================================
+*/
+
+/************ SVG ANIMATION 1 ***********/
+#svg1 svg {
+  height: 50px;
+  width: 28px;
+}
+#svg1 svg #mouse-circle circle {
+  -webkit-animation-name: svg1;
+  animation-name: svg1;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes svg1 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(150px);
+    transform: translateY(150px);
+    opacity: 0;
+  }
+}
+@keyframes svg1 {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(150px);
+    transform: translateY(150px);
+    opacity: 0;
+  }
+}
+
+
+/************ SVG ANIMATION 2 ***********/
+#svg2 svg {
+  height: 50px;
+  width: 28px;
+}
+#svg2 svg #mouse-circle2 circle {
+  -webkit-animation: svg2, svg2;
+  animation: svg2, svg2;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes svg2 {
+  0% {
+    -webkit-transform: translateY(1);
+    transform: translateY(1);
+    opacity: 1;
+  }
+  33% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 1;
+  }
+  66% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes svg2 {
+  0% {
+    -webkit-transform: translateY(1);
+    transform: translateY(1);
+    opacity: 1;
+  }
+  33% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 1;
+  }
+  66% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/************ SVG ANIMATION 3 ***********/
+#svg3 svg {
+  height: 50px;
+  animation-name: svg3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes svg3 {
+  0% {
+    opacity: .7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: .7;
+    transform: scale(1);
+  }
+}
+
+
+
+
+/*
+==========================================
+  TEXT ANIMATIONS
+==========================================
+*/
+
+/************ TEXT ANIMATION 1 ***********/
+#text1 {
+  -webkit-animation-name: text1;
+  animation-name: text1;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes text1 {
   0% {
     opacity: 1;
   }
@@ -24,17 +565,16 @@
   }
 }
 
-/*********   ANIMATION 2   **************/
-
-#animation_2 {
-  -webkit-animation-name: animation_2;
-  animation-name: animation_2;
+/************ TEXT ANIMATION 2 ***********/
+#text2 {
+  -webkit-animation-name: text2;
+  animation-name: text2;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-@-webkit-keyframes animation_2 {
+@-webkit-keyframes text2 {
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -47,17 +587,16 @@
   }
 }
 
-/*********   ANIMATION 3   **************/
-
-#animation_3 {
-  -webkit-animation-name: animation_3;
-  animation-name: animation_3;
+/************ TEXT ANIMATION 3 ***********/
+#text3 {
+  -webkit-animation-name: text3;
+  animation-name: text3;
   -webkit-animation-duration: 4s;
   animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-@-webkit-keyframes animation_3 {
+@-webkit-keyframes text3 {
   0% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -78,526 +617,4 @@
     transform: scale(1);
     opacity: 1;
   }
-}
-
-/*********   ANIMATION 4   **************/
-
-#animation_4 {
-  -webkit-animation-name: animation_4;
-  animation-name: animation_4;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-#animation_4 .scroll-arrow-container {
-  height: 20px;
-  width: 20px;
-  position: relative;
-}
-#animation_4 span {
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  background-color: #7f7f7f;
-}
-#animation_4 span.arrow-left {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-  left: -17px;
-}
-#animation_4 span.arrow-right {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  right: -17px;
-}
-@-webkit-keyframes animation_4 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/*********   ANIMATION 5   **************/
-
-#animation_5 {
-  -webkit-animation-name: animation_5;
-  animation-name: animation_5;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-#animation_5 .scroll-arrow-container {
-  height: 20px;
-  width: 20px;
-  position: relative;
-}
-#animation_5 span {
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  background-color: #7f7f7f;
-}
-#animation_5 span.arrow-left {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-  left: -17px;
-}
-#animation_5 span.arrow-right {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  right: -17px;
-}
-@-webkit-keyframes animation_5 {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-}
-
-/*********   ANIMATION 6   **************/
-
-#animation_6 {
-  -webkit-animation-name: animation_6;
-  animation-name: animation_6;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-#animation_6 .scroll-arrow-container {
-  height: 20px;
-  width: 20px;
-  position: relative;
-}
-#animation_6 span {
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  background-color: #7f7f7f;
-}
-#animation_6 span.arrow-left {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-  left: -17px;
-}
-#animation_6 span.arrow-right {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  right: -17px;
-}
-@-webkit-keyframes animation_6 {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(0) translateY(200px);
-    transform: scale(0) translateY(200px);
-    opacity: 0;
-  }
-}
-
-/*********   ANIMATION 7   **************/
-
-#animation_7 {
-  margin-top: 40px;
-  -webkit-animation-name: animation_7;
-  animation-name: animation_7;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-#animation_7 span {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 20px 15px 0 15px;
-  border-color: #7f7f7f transparent transparent transparent;
-}
-@-webkit-keyframes animation_7 {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@keyframes animation_7 {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-
-/*********   ANIMATION 8   **************/
-
-#animation_8 svg {
-  height: 50px;
-  width: 28px;
-}
-#animation_8 svg #mouse-circle circle {
-  -webkit-animation-name: animation_8;
-  animation-name: animation_8;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes animation_8 {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(150px);
-    transform: translateY(150px);
-    opacity: 0;
-  }
-}
-@keyframes animation_8 {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateY(150px);
-    transform: translateY(150px);
-    opacity: 0;
-  }
-}
-
-/*********   ANIMATION 9   **************/
-
-#animation_9 svg {
-  height: 50px;
-  width: 28px;
-}
-#animation_9 svg #mouse-circle2 circle {
-  -webkit-animation: animation_9, animation_9;
-  animation: animation_9, animation_9;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes animation_9 {
-  0% {
-    -webkit-transform: translateY(1);
-    transform: translateY(1);
-    opacity: 1;
-  }
-  33% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 1;
-  }
-  66% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  99% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes animation_9 {
-  0% {
-    -webkit-transform: translateY(1);
-    transform: translateY(1);
-    opacity: 1;
-  }
-  33% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 1;
-  }
-  66% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  99% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*********   ANIMATION 10   **************/
-
-#animation_10 {
-
-}
-#animation_10 .scroll-arrow-container {
-  height: 20px;
-  width: 20px;
-  position: relative;
-}
-#animation_10 span {
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  background-color: #7f7f7f;
-}
-#animation_10 span.arrow-left {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-  left: -17px;
-}
-#animation_10 span.arrow-right {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  right: -17px;
-}
-#animation_10 .arrow1 {
-  animation-name: animation_10_1;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes animation_10_1 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-#animation_10 .arrow2 {
-  animation-name: animation_10_2;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes animation_10_2 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-#animation_10 .arrow3 {
-  animation-name: animation_10_3;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes animation_10_3 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/*********   ANIMATION 11   **************/
-
-#animation_11 .scroll-arrow-container {
-  height: 20px;
-  width: 20px;
-  position: relative;
-}
-#animation_11 span {
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  background-color: #7f7f7f;
-}
-#animation_11 span.arrow-left {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-  left: -17px;
-}
-#animation_11 span.arrow-right {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  right: -17px;
-}
-#animation_11 .arrow1 {
-  animation-name: animation_11_1;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes animation_11_1 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-#animation_11 .arrow2 {
-  animation-name: animation_11_2;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes animation_11_2 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-#animation_11 .arrow3 {
-  animation-name: animation_11_3;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes animation_11_3 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/*********   ANIMATION 12   **************/
-#animation_12 svg {
-  height: 50px;
-  animation-name: animation_12;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-@-webkit-keyframes animation_12 {
-  0% {
-    opacity: .7;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: .7;
-    transform: scale(1);
-  }
-
 }
