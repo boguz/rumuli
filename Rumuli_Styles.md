@@ -1,4 +1,4 @@
-# BOGUZ SNIPPETS STYLE GUIDE
+# RUMULI STYLE GUIDE
 
 
 ## COLORS
@@ -9,8 +9,8 @@ middle grey: #e5e5e5
        blue: #19b5fe
 
 ## FONTS
-        menu: Roboto Thin 18pt Uppercase
-       intro: Roboto This 16pt
-         cta,
- description,
-bottom links: Roboto Thin 12pt Uppercase
+        menu: Roboto 100 16pt Uppercase
+       intro: Roboto 100 18pt
+         cta: Roboto 300 16px
+ description: Roboto 100 12px Uppercase
+bottom links: Roboto 100 12pt Uppercase
