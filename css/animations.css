@@ -258,6 +258,125 @@ SINLGE ELEMENT ANIMATIONS
   }
 }
 
+/******* SINGLE ELEMENT ANIMATION 7 *******/
+#single7 {
+  -webkit-animation-name: single7;
+          animation-name: single7;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#single7 span:before {
+  content: "↓";
+  display: block;
+  transform: scale(3);
+
+}
+@-webkit-keyframes single7 {
+  0% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(720deg);
+  }
+  50% {
+
+    transform: rotate(720deg);
+  }
+  70% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/******* SINGLE ELEMENT ANIMATION 8 *******/
+#single8 {
+  -webkit-animation-name: single8;
+          animation-name: single8;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  transform-origin: top;
+}
+#single8 span:before {
+  content: "↓";
+  display: block;
+  transform: scale(3);
+
+}
+@-webkit-keyframes single8 {
+  0% {
+    transform: rotateX(0) scale(1);
+  }
+  15% {
+    transform: rotateX(75deg) scale(1.5);
+  }
+  30% {
+    transform: rotateX(0) scale(1);
+  }
+  100% {
+    transform: rotateX(0) scale(1);
+  }
+}
+
+/******* SINGLE ELEMENT ANIMATION 9 *******/
+#single9 {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+}
+#single9 span {
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: relative;
+
+}
+#single9 span:before {
+  content: "↓";
+  position: relative;
+  top: 15px;
+  left: 60px;
+  display: block;
+  transform: scale(2.5);
+  -webkit-animation-name: single9;
+          animation-name: single9;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes single9 {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    top: -50px;
+    opacity: 1;
+  }
+  25% {
+    top: 15px;
+  }
+  75% {
+    top: 15px;
+  }
+  98% {
+    top: 80px;
+    opacity: 1
+  }
+  99% {
+    opacity: 0
+  }
+  100% {
+    top: -15px;
+    opacity: 0;
+  }
+}
 
 
 /*
@@ -633,6 +752,7 @@ MULTIPLE ELEMENT ANIMATIONS
     opacity: 0;
   }
 }
+
 
 
 /*
