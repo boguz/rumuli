@@ -1,0 +1,75 @@
+/******************************************
+*					    											  		*
+*              	RUMILI                    *  
+*     http://boguz.github.io/rumuli/      *
+*      						    									  *
+******************************************/
+
+
+/*********    SVG  ANIMATION 2   *********/
+
+#svg2 svg {
+	height: 50px;
+	width: 28px;
+}
+
+#svg2 svg #mouse-circle2 circle {
+	-webkit-animation: svg2, svg2;
+	animation: svg2, svg2;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes svg2 {
+	0% {
+		-webkit-transform: translateY(1);
+		transform: translateY(1);
+		opacity: 1;
+	}
+	33% {
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+		opacity: 1;
+	}
+	66% {
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	99% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes svg2 {
+	0% {
+		-webkit-transform: translateY(1);
+		transform: translateY(1);
+		opacity: 1;
+	}
+	33% {
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+		opacity: 1;
+	}
+	66% {
+		-webkit-transform: translateY(20px);
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	99% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

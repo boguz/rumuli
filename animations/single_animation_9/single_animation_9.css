@@ -1,0 +1,66 @@
+/******************************************
+*					    											  		*
+*              	RUMILI                    *  
+*     http://boguz.github.io/rumuli/      *
+*      						    									  *
+******************************************/
+
+
+/*****  SINGLE ELEMENT ANIMATION 9   ******/
+
+#single9 {
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+}
+
+#single9 span {
+	display: block;
+	height: 50px;
+	width: 50px;
+	position: relative;
+}
+
+#single9 span:before {
+	content: "↓";
+	position: relative;
+	top: 15px;
+	left: 60px;
+	display: block;
+	-webkit-transform: scale(2.5);
+	-ms-transform: scale(2.5);
+	transform: scale(2.5);
+	-webkit-animation-name: single9;
+	animation-name: single9;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes single9 {
+	0% {
+		opacity: 0;
+	}
+	1% {
+		top: -50px;
+		opacity: 1;
+	}
+	25% {
+		top: 15px;
+	}
+	75% {
+		top: 15px;
+	}
+	98% {
+		top: 80px;
+		opacity: 1
+	}
+	99% {
+		opacity: 0
+	}
+	100% {
+		top: -15px;
+		opacity: 0;
+	}
+}

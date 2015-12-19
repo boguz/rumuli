@@ -1,0 +1,57 @@
+/******************************************
+ *					    													*
+ *              	RUMILI                  *  
+ *     http://boguz.github.io/rumuli/     *
+ *      						    									*
+ ******************************************/
+
+
+/*****  SINGLE ELEMENT ANIMATION 1   ******/
+
+#single1 {
+	-webkit-animation-name: single1;
+	animation-name: single1;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+#single1 .scroll-arrow-container {
+	height: 20px;
+	width: 20px;
+	position: relative;
+}
+
+#single1 span {
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	background-color: #7f7f7f;
+}
+
+#single1 span.arrow-left {
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+	left: -17px;
+}
+
+#single1 span.arrow-right {
+	-webkit-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	right: -17px;
+}
+
+@-webkit-keyframes single1 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

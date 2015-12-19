@@ -1,0 +1,85 @@
+/******************************************
+*					    											  		*
+*              	RUMILI                    *  
+*     http://boguz.github.io/rumuli/      *
+*      						    									  *
+******************************************/
+
+
+/*********    SVG  ANIMATION 3   *********/
+
+#svg3 svg {
+	height: 60px;
+}
+
+#svg3 svg #mouse3_3 {
+	-webkit-animation-name: svg3;
+	animation-name: svg3;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes svg3 {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	8% {
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+		opacity: 1;
+	}
+	9% {
+		opacity: 0;
+	}
+	10% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	11% {
+		opacity: 1;
+	}
+	12% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	20% {
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+		opacity: 1;
+	}
+	21% {
+		opacity: 0;
+	}
+	22% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	23% {
+		opacity: 1;
+	}
+	24% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	34% {
+		-webkit-transform: translateY(50px);
+		transform: translateY(50px);
+		opacity: 1;
+	}
+	35% {
+		opacity: 0;
+	}
+	36% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	99% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

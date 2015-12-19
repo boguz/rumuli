@@ -1,0 +1,51 @@
+/******************************************
+*					    											  		*
+*              	RUMILI                    *  
+*     http://boguz.github.io/rumuli/      *
+*      						    									  *
+******************************************/
+
+
+/*********    SVG  ANIMATION 6   *********/
+
+#svg6 svg {
+	height: 80px;
+}
+
+#svg6 svg #arrow {
+	-webkit-transform: scale(.6);
+	-ms-transform: scale(.6);
+	transform: scale(.6);
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+}
+
+#svg6 svg #circle {
+	-webkit-transform: scale(.8) rotate(-90deg);
+	-ms-transform: scale(.8) rotate(-90deg);
+	transform: scale(.8) rotate(-90deg);
+	stroke-width: 15px;
+	stroke-dasharray: 2000;
+	-webkit-animation-name: svg6;
+	animation-name: svg6;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+}
+
+@-webkit-keyframes svg6 {
+	0% {
+		stroke-dashoffset: 0;
+	}
+	30% {
+		stroke-dashoffset: 2000;
+	}
+	60% {
+		stroke-dashoffset: 0;
+	}
+}

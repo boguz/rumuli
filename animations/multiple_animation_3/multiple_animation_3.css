@@ -1,0 +1,168 @@
+/******************************************
+*					    											  		*
+*              	RUMILI                    *  
+*     http://boguz.github.io/rumuli/      *
+*      						    									  *
+******************************************/
+
+
+/****  MULTIPLE ELEMENT ANIMATION 3  *****/
+
+#multiple3 .scroll-arrow-container {
+	height: 5px;
+	width: 20px;
+	position: relative;
+}
+
+#multiple3 span {
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	background-color: #7f7f7f;
+}
+
+#multiple3 span.arrow-left {
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+	left: -17px;
+}
+
+#multiple3 span.arrow-right {
+	-webkit-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	right: -17px;
+}
+
+#multiple3 .arrow1 {
+	-webkit-transform: scale(.4);
+	-ms-transform: scale(.4);
+	transform: scale(.4);
+	-webkit-animation-name: multiple3_1;
+	animation-name: multiple3_1;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes multiple3_1 {
+	0% {
+		opacity: 0;
+	}
+	7% {
+		opacity: 1;
+	}
+	14% {
+		opacity: 0;
+	}
+	21% {
+		opacity: 0;
+	}
+	28% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#multiple3 .arrow2 {
+	-webkit-transform: scale(.6);
+	-ms-transform: scale(.6);
+	transform: scale(.6);
+	-webkit-animation-name: multiple3_2;
+	animation-name: multiple3_2;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes multiple3_2 {
+	0% {
+		opacity: 0;
+	}
+	7% {
+		opacity: 0;
+	}
+	14% {
+		opacity: 1;
+	}
+	21% {
+		opacity: 0;
+	}
+	28% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#multiple3 .arrow3 {
+	-webkit-transform: scale(.8);
+	-ms-transform: scale(.8);
+	transform: scale(.8);
+	-webkit-animation-name: multiple3_3;
+	animation-name: multiple3_3;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes multiple3_3 {
+	0% {
+		opacity: 0;
+	}
+	7% {
+		opacity: 0;
+	}
+	14% {
+		opacity: 0;
+	}
+	21% {
+		opacity: 1;
+	}
+	28% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#multiple3 .arrow4 {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-animation-name: multiple3_4;
+	animation-name: multiple3_4;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes multiple3_4 {
+	0% {
+		opacity: 0;
+	}
+	7% {
+		opacity: 0;
+	}
+	14% {
+		opacity: 0;
+	}
+	21% {
+		opacity: 0;
+	}
+	28% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

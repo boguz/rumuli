@@ -1,0 +1,126 @@
+/******************************************
+*					    											  		*
+*              	RUMILI                    *  
+*     http://boguz.github.io/rumuli/      *
+*      						    									  *
+******************************************/
+
+
+/****  MULTIPLE ELEMENT ANIMATION 1   *****/
+
+#multiple1 .scroll-arrow-container {
+	height: 20px;
+	width: 20px;
+	position: relative;
+}
+
+#multiple1 span {
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	background-color: #7f7f7f;
+}
+
+#multiple1 span.arrow-left {
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+	left: -17px;
+}
+
+#multiple1 span.arrow-right {
+	-webkit-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+	right: -17px;
+}
+
+#multiple1 .arrow1 {
+	-webkit-animation-name: multiple1_1;
+	animation-name: multiple1_1;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes multiple1_1 {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#multiple1 .arrow2 {
+	-webkit-animation-name: multiple1_2;
+	animation-name: multiple1_2;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes multiple1_2 {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#multiple1 .arrow3 {
+	-webkit-animation-name: multiple1_3;
+	animation-name: multiple1_3;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes multiple1_3 {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

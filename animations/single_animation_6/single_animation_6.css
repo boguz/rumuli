@@ -1,0 +1,50 @@
+/******************************************
+*					    											  		*
+*              	RUMILI                    *  
+*     http://boguz.github.io/rumuli/      *
+*      						    									  *
+******************************************/
+
+
+/*****  SINGLE ELEMENT ANIMATION 6   ******/
+
+#single6 {
+	margin-top: 40px;
+	-webkit-animation-name: single6;
+	animation-name: single6;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+}
+
+#single6 span {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 15px 0 15px;
+	border-color: #7f7f7f transparent transparent transparent;
+}
+
+@-webkit-keyframes single6 {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	5%,
+	15%,
+	25% {
+		-webkit-transform: scale(.8);
+		transform: scale(.8);
+	}
+	10%,
+	20%,
+	30%,
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
